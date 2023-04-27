@@ -342,17 +342,28 @@ justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
-#wrapper_three div main section:not(#l3_nav){
-    display: block;
-}
 #l3_nav{
     background-color: #E5E5E5;
     display: flex;
     justify-content: center;
 }
-#memory_game{
+#memoryGame{
     display: block;
     background-color: white;
+}
+#gameArea{
+display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: auto;
+}
+#memoryGame .black_box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+
 }
 #wrapper_three div main section:nth-of-type(4){
     width: 100%;
@@ -362,11 +373,17 @@ justify-content: center;
     #wrapper_three header .black_box{
         right: 1.666667%;
     }
-    #wrapper_three div main section{
+    #wrapper_three div main section:not(#gameArea):not(#wrapper_three div main section:nth-of-type(4)){
         height: 995px;
     }
-    #memory_game{
+    #memoryGame{
         width: 66.9445%;
+    }
+    #gameArea{
+        width: 91.2222%;
+        margin-top: 123px;
+        margin-left: 4.4444%;
+        gap: 170px 9.1667%;
     }
     #l3_nav{
         width: 25.8334%;
@@ -398,7 +415,7 @@ justify-content: center;
         height: 105px;
         width: 100%;
     }
-    #memory_game{
+    #memoryGame{
         width: 100%;
         min-height: 1346px;
     }
